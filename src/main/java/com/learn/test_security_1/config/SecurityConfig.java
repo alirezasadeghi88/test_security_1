@@ -129,6 +129,7 @@ public class SecurityConfig {
                         .anyRequest()
                         .authenticated()
                 )
+
                 .logout(AbstractHttpConfigurer::disable);
 
         return http.build();
